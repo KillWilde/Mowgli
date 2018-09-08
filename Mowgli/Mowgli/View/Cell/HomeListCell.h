@@ -11,5 +11,9 @@
 @interface HomeListCell : UICollectionViewCell
 
 @property (nonatomic,strong) UIImageView *imageViewContnt;
+@property (nonatomic,strong) UIView *myShadowView;
+
+-(void)reduceContentAnimation:(BOOL)animation;
+-(void)relargeContentAnimation:(BOOL)animation;
 
 @end

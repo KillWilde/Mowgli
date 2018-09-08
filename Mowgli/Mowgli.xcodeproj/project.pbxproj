@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253B30DF2143B5E200C238D7 /* CYLongPressMoveCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 253B30DE2143B5E200C238D7 /* CYLongPressMoveCollectionView.m */; };
+		25C1AECC213CC817007AD4FC /* demoOne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25C1AECB213CC817007AD4FC /* demoOne.jpg */; };
+		25C7CCBC213CB86D0062F8B3 /* HomeListItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C7CCBB213CB86D0062F8B3 /* HomeListItemModel.m */; };
 		3334F718A4FB5AA9C2BE2736 /* libPods-Mowgli.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C048CB2B10D4B49A7D7182 /* libPods-Mowgli.a */; };
 		6D4EC22D211C839F006C3C58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4EC22C211C839F006C3C58 /* AppDelegate.m */; };
 		6D4EC235211C83AD006C3C58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D4EC234211C83AD006C3C58 /* Assets.xcassets */; };
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		253B30DD2143B5E200C238D7 /* CYLongPressMoveCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLongPressMoveCollectionView.h; sourceTree = "<group>"; };
+		253B30DE2143B5E200C238D7 /* CYLongPressMoveCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLongPressMoveCollectionView.m; sourceTree = "<group>"; };
+		25C1AECB213CC817007AD4FC /* demoOne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demoOne.jpg; sourceTree = "<group>"; };
+		25C7CCBA213CB86D0062F8B3 /* HomeListItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeListItemModel.h; sourceTree = "<group>"; };
+		25C7CCBB213CB86D0062F8B3 /* HomeListItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeListItemModel.m; sourceTree = "<group>"; };
 		6D4EC228211C839E006C3C58 /* Mowgli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mowgli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4EC22B211C839F006C3C58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D4EC22C211C839F006C3C58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +95,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		253B30DC2143B5AD00C238D7 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				253B30DD2143B5E200C238D7 /* CYLongPressMoveCollectionView.h */,
+				253B30DE2143B5E200C238D7 /* CYLongPressMoveCollectionView.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		25C7CCB8213CB7800062F8B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25C7CCB9213CB7800062F8B3 /* HomeListModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25C7CCB9213CB7800062F8B3 /* HomeListModel */ = {
+			isa = PBXGroup;
+			children = (
+				25C7CCBA213CB86D0062F8B3 /* HomeListItemModel.h */,
+				25C7CCBB213CB86D0062F8B3 /* HomeListItemModel.m */,
+			);
+			path = HomeListModel;
+			sourceTree = "<group>";
+		};
 		6D4EC21F211C839E006C3C58 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +150,7 @@
 				6DA48CA9211FD3AB009AF680 /* Resource */,
 				6D8BB9C12123F72A004C97DA /* View */,
 				6D4EC24F211C8E52006C3C58 /* ViewControllers */,
+				25C7CCB8213CB7800062F8B3 /* Model */,
 				6D4EC234211C83AD006C3C58 /* Assets.xcassets */,
 				6D4EC236211C83AD006C3C58 /* LaunchScreen.storyboard */,
 				6D8BB9C721240942004C97DA /* PrefixHeader.pch */,
@@ -150,6 +185,7 @@
 		6D8BB9C12123F72A004C97DA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				253B30DC2143B5AD00C238D7 /* TableView */,
 				6D8BB9C22123F72A004C97DA /* Cell */,
 			);
 			name = View;
@@ -172,6 +208,7 @@
 				6DA48CAC211FDB0E009AF680 /* nav_back@2x.png */,
 				6DA48CBD212071A8009AF680 /* personal_icon@2x.png */,
 				6D8BB9BF2122D42B004C97DA /* mountain.png */,
+				25C1AECB213CC817007AD4FC /* demoOne.jpg */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -311,6 +348,7 @@
 			files = (
 				6D8BB9C02122D42C004C97DA /* mountain.png in Resources */,
 				6D4EC238211C83AD006C3C58 /* LaunchScreen.storyboard in Resources */,
+				25C1AECC213CC817007AD4FC /* demoOne.jpg in Resources */,
 				6DA48CAD211FDB0E009AF680 /* nav_back@2x.png in Resources */,
 				6DA48CB421206F46009AF680 /* home_icon@2x.png in Resources */,
 				6DA48CBE212071A8009AF680 /* personal_icon@2x.png in Resources */,
@@ -358,9 +396,11 @@
 				6DA48CA8211FCC95009AF680 /* CYUISelfDefineVC.m in Sources */,
 				6DA48CB821206F8D009AF680 /* HomeVC.m in Sources */,
 				6D4EC23B211C83AD006C3C58 /* main.m in Sources */,
+				253B30DF2143B5E200C238D7 /* CYLongPressMoveCollectionView.m in Sources */,
 				6D4EC22D211C839F006C3C58 /* AppDelegate.m in Sources */,
 				6D8BB9C52123F770004C97DA /* HomeListCell.m in Sources */,
 				6DA48CBC21207001009AF680 /* PersonalVC.m in Sources */,
+				25C7CCBC213CB86D0062F8B3 /* HomeListItemModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
