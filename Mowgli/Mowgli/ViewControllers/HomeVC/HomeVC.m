@@ -74,7 +74,7 @@ static NSString *kHomeListCell = @"kHomeListCell";
     HomeListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kHomeListCell forIndexPath:indexPath];
     cell.tag = 121;
     
-    cell.imageViewContnt.image = [UIImage imageNamed:@"demoOne.jpg"];
+    cell.imageViewContnt.image = [UIImage imageNamed:@"demoOne"];
     
     return cell;
 }
