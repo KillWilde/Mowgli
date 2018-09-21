@@ -25,6 +25,10 @@
 		6DA48CB821206F8D009AF680 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA48CB721206F8D009AF680 /* HomeVC.m */; };
 		6DA48CBC21207001009AF680 /* PersonalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA48CBB21207001009AF680 /* PersonalVC.m */; };
 		6DA48CBE212071A8009AF680 /* personal_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA48CBD212071A8009AF680 /* personal_icon@2x.png */; };
+		6F3035C6214AA13200687F1F /* CYThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3035C5214AA13200687F1F /* CYThread.m */; };
+		6F48FC772154D24600159922 /* DisplayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F48FC762154D24600159922 /* DisplayVC.m */; };
+		6F48FC7B2154D3BB00159922 /* RotateLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F48FC7A2154D3BB00159922 /* RotateLoadingView.m */; };
+		6F48FC7D2154D3D200159922 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F48FC7C2154D3D200159922 /* loading.png */; };
 		6F6D7F902149266200582441 /* demoOne.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F6D7F8F2149266200582441 /* demoOne.png */; };
 		6F6D7F962149270700582441 /* CYColorPicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D7F952149270700582441 /* CYColorPicManager.m */; };
 		6F6D7F992149315600582441 /* CYPanoramaCompoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D7F982149315600582441 /* CYPanoramaCompoundView.m */; };
@@ -72,6 +76,13 @@
 		6DA48CBA21207001009AF680 /* PersonalVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalVC.h; sourceTree = "<group>"; };
 		6DA48CBB21207001009AF680 /* PersonalVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalVC.m; sourceTree = "<group>"; };
 		6DA48CBD212071A8009AF680 /* personal_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "personal_icon@2x.png"; sourceTree = "<group>"; };
+		6F3035C4214AA13200687F1F /* CYThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYThread.h; sourceTree = "<group>"; };
+		6F3035C5214AA13200687F1F /* CYThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYThread.m; sourceTree = "<group>"; };
+		6F48FC752154D24600159922 /* DisplayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayVC.h; sourceTree = "<group>"; };
+		6F48FC762154D24600159922 /* DisplayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayVC.m; sourceTree = "<group>"; };
+		6F48FC792154D3BB00159922 /* RotateLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateLoadingView.h; sourceTree = "<group>"; };
+		6F48FC7A2154D3BB00159922 /* RotateLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotateLoadingView.m; sourceTree = "<group>"; };
+		6F48FC7C2154D3D200159922 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
 		6F6D7F8F2149266200582441 /* demoOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demoOne.png; sourceTree = "<group>"; };
 		6F6D7F942149270700582441 /* CYColorPicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYColorPicManager.h; sourceTree = "<group>"; };
 		6F6D7F952149270700582441 /* CYColorPicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYColorPicManager.m; sourceTree = "<group>"; };
@@ -155,6 +166,7 @@
 				6DA48CAE21205AFC009AF680 /* Category */,
 				6DA48CA9211FD3AB009AF680 /* Resource */,
 				6F6D7F93214926C600582441 /* Manager */,
+				6F3035C2214AA11800687F1F /* Test */,
 				6D8BB9C12123F72A004C97DA /* View */,
 				6D4EC24F211C8E52006C3C58 /* ViewControllers */,
 				25C7CCB8213CB7800062F8B3 /* Model */,
@@ -182,6 +194,7 @@
 				6D4EC250211C8E7C006C3C58 /* MainVC.h */,
 				6D4EC251211C8E7C006C3C58 /* MainVC.m */,
 				6DA48CB521206F6E009AF680 /* HomeVC */,
+				6F48FC742154D21E00159922 /* DisplayVC */,
 				6DA48CB921206FED009AF680 /* PersonalVC */,
 				6DA48CA6211FCC94009AF680 /* CYUISelfDefineVC.h */,
 				6DA48CA7211FCC94009AF680 /* CYUISelfDefineVC.m */,
@@ -192,6 +205,7 @@
 		6D8BB9C12123F72A004C97DA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6F48FC782154D34600159922 /* AnimationView */,
 				253B30DC2143B5AD00C238D7 /* TableView */,
 				6D8BB9C22123F72A004C97DA /* Cell */,
 				6F6D7F972149315600582441 /* CYPanoramaCompoundView.h */,
@@ -218,6 +232,7 @@
 				6DA48CBD212071A8009AF680 /* personal_icon@2x.png */,
 				6D8BB9BF2122D42B004C97DA /* mountain.png */,
 				6F6D7F8F2149266200582441 /* demoOne.png */,
+				6F48FC7C2154D3D200159922 /* loading.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -255,6 +270,41 @@
 				6DA48CBB21207001009AF680 /* PersonalVC.m */,
 			);
 			path = PersonalVC;
+			sourceTree = "<group>";
+		};
+		6F3035C2214AA11800687F1F /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				6F3035C3214AA11800687F1F /* Thread */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		6F3035C3214AA11800687F1F /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				6F3035C4214AA13200687F1F /* CYThread.h */,
+				6F3035C5214AA13200687F1F /* CYThread.m */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		6F48FC742154D21E00159922 /* DisplayVC */ = {
+			isa = PBXGroup;
+			children = (
+				6F48FC752154D24600159922 /* DisplayVC.h */,
+				6F48FC762154D24600159922 /* DisplayVC.m */,
+			);
+			path = DisplayVC;
+			sourceTree = "<group>";
+		};
+		6F48FC782154D34600159922 /* AnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				6F48FC792154D3BB00159922 /* RotateLoadingView.h */,
+				6F48FC7A2154D3BB00159922 /* RotateLoadingView.m */,
+			);
+			path = AnimationView;
 			sourceTree = "<group>";
 		};
 		6F6D7F93214926C600582441 /* Manager */ = {
@@ -368,6 +418,7 @@
 				6D4EC238211C83AD006C3C58 /* LaunchScreen.storyboard in Resources */,
 				6F6D7F902149266200582441 /* demoOne.png in Resources */,
 				6DA48CAD211FDB0E009AF680 /* nav_back@2x.png in Resources */,
+				6F48FC7D2154D3D200159922 /* loading.png in Resources */,
 				6DA48CB421206F46009AF680 /* home_icon@2x.png in Resources */,
 				6DA48CBE212071A8009AF680 /* personal_icon@2x.png in Resources */,
 				6D4EC235211C83AD006C3C58 /* Assets.xcassets in Resources */,
@@ -411,13 +462,16 @@
 			files = (
 				6DA48CB221205B5F009AF680 /* UINavigationBar+FixBorderSpace.m in Sources */,
 				6D4EC252211C8E7C006C3C58 /* MainVC.m in Sources */,
+				6F3035C6214AA13200687F1F /* CYThread.m in Sources */,
 				6DA48CA8211FCC95009AF680 /* CYUISelfDefineVC.m in Sources */,
 				6F6D7F962149270700582441 /* CYColorPicManager.m in Sources */,
 				6DA48CB821206F8D009AF680 /* HomeVC.m in Sources */,
 				6D4EC23B211C83AD006C3C58 /* main.m in Sources */,
 				6F6D7F992149315600582441 /* CYPanoramaCompoundView.m in Sources */,
 				253B30DF2143B5E200C238D7 /* CYLongPressMoveCollectionView.m in Sources */,
+				6F48FC772154D24600159922 /* DisplayVC.m in Sources */,
 				6D4EC22D211C839F006C3C58 /* AppDelegate.m in Sources */,
+				6F48FC7B2154D3BB00159922 /* RotateLoadingView.m in Sources */,
 				6D8BB9C52123F770004C97DA /* HomeListCell.m in Sources */,
 				6DA48CBC21207001009AF680 /* PersonalVC.m in Sources */,
 				25C7CCBC213CB86D0062F8B3 /* HomeListItemModel.m in Sources */,

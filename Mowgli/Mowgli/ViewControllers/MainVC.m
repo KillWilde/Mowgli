@@ -9,6 +9,7 @@
 #import "MainVC.h"
 #import "HomeVC.h"
 #import "PersonalVC.h"
+#import "DisplayVC/DisplayVC.h"
 
 @interface MainVC ()
 
@@ -30,11 +31,14 @@
     homeVC.tabBarItem.title = @"首页";
     homeVC.tabBarItem.image = [UIImage imageNamed:@"home_icon"];
     
+    DisplayVC *displayVC = [[DisplayVC alloc] init];
+    displayVC.tabBarItem.title = @"展示";
+    
     PersonalVC *personalVC = [[PersonalVC alloc] init];
     personalVC.tabBarItem.title = @"我的";
     personalVC.tabBarItem.image = [UIImage imageNamed:@"personal_icon"];
     
-    self.viewControllers = @[homeVC,personalVC];
+    self.viewControllers = @[homeVC,displayVC,personalVC];
 }
 
 -(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
