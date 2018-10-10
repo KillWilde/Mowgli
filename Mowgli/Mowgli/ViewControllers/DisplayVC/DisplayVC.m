@@ -21,17 +21,6 @@
     [super viewDidLoad];
     
     self.loadingView = [[RotateLoadingView alloc] initWithFrame:CGRectMake(30, 200, 100, 100)];
-    
-    [self.view addSubview:self.loadingView];
-    
-}
-
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.loadingView beginRotateAnticlockwise];
-}
-
--(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.loadingView showImage:[UIImage imageNamed:@"demoOne.png"]];
 }
 
 @end

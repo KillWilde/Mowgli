@@ -32,6 +32,9 @@
 		6F6D7F902149266200582441 /* demoOne.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F6D7F8F2149266200582441 /* demoOne.png */; };
 		6F6D7F962149270700582441 /* CYColorPicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D7F952149270700582441 /* CYColorPicManager.m */; };
 		6F6D7F992149315600582441 /* CYPanoramaCompoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D7F982149315600582441 /* CYPanoramaCompoundView.m */; };
+		6F895D14216E188500CB63F0 /* FunctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F895D13216E188500CB63F0 /* FunctionVC.m */; };
+		6F895D16216E20F800CB63F0 /* funcition_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F895D15216E20F800CB63F0 /* funcition_icon@2x.png */; };
+		6F895D18216E21E900CB63F0 /* display_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F895D17216E21E900CB63F0 /* display_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,10 @@
 		6F6D7F952149270700582441 /* CYColorPicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYColorPicManager.m; sourceTree = "<group>"; };
 		6F6D7F972149315600582441 /* CYPanoramaCompoundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYPanoramaCompoundView.h; sourceTree = "<group>"; };
 		6F6D7F982149315600582441 /* CYPanoramaCompoundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYPanoramaCompoundView.m; sourceTree = "<group>"; };
+		6F895D12216E188500CB63F0 /* FunctionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionVC.h; sourceTree = "<group>"; };
+		6F895D13216E188500CB63F0 /* FunctionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionVC.m; sourceTree = "<group>"; };
+		6F895D15216E20F800CB63F0 /* funcition_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funcition_icon@2x.png"; sourceTree = "<group>"; };
+		6F895D17216E21E900CB63F0 /* display_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "display_icon@2x.png"; sourceTree = "<group>"; };
 		73C048CB2B10D4B49A7D7182 /* libPods-Mowgli.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mowgli.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6062888D2BE37366DE9391 /* Pods-Mowgli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mowgli.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mowgli/Pods-Mowgli.debug.xcconfig"; sourceTree = "<group>"; };
 		F38AEBB0AB11F818314D0EF1 /* Pods-Mowgli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mowgli.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mowgli/Pods-Mowgli.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +202,7 @@
 				6D4EC251211C8E7C006C3C58 /* MainVC.m */,
 				6DA48CB521206F6E009AF680 /* HomeVC */,
 				6F48FC742154D21E00159922 /* DisplayVC */,
+				6F895D11216E186400CB63F0 /* FunciontVC */,
 				6DA48CB921206FED009AF680 /* PersonalVC */,
 				6DA48CA6211FCC94009AF680 /* CYUISelfDefineVC.h */,
 				6DA48CA7211FCC94009AF680 /* CYUISelfDefineVC.m */,
@@ -227,6 +235,8 @@
 		6DA48CA9211FD3AB009AF680 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				6F895D17216E21E900CB63F0 /* display_icon@2x.png */,
+				6F895D15216E20F800CB63F0 /* funcition_icon@2x.png */,
 				6DA48CB321206F46009AF680 /* home_icon@2x.png */,
 				6DA48CAC211FDB0E009AF680 /* nav_back@2x.png */,
 				6DA48CBD212071A8009AF680 /* personal_icon@2x.png */,
@@ -314,6 +324,15 @@
 				6F6D7F952149270700582441 /* CYColorPicManager.m */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		6F895D11216E186400CB63F0 /* FunciontVC */ = {
+			isa = PBXGroup;
+			children = (
+				6F895D12216E188500CB63F0 /* FunctionVC.h */,
+				6F895D13216E188500CB63F0 /* FunctionVC.m */,
+			);
+			path = FunciontVC;
 			sourceTree = "<group>";
 		};
 		A744BE9353C4E2C97D01D32E /* Pods */ = {
@@ -414,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F895D18216E21E900CB63F0 /* display_icon@2x.png in Resources */,
 				6D8BB9C02122D42C004C97DA /* mountain.png in Resources */,
 				6D4EC238211C83AD006C3C58 /* LaunchScreen.storyboard in Resources */,
 				6F6D7F902149266200582441 /* demoOne.png in Resources */,
@@ -422,6 +442,7 @@
 				6DA48CB421206F46009AF680 /* home_icon@2x.png in Resources */,
 				6DA48CBE212071A8009AF680 /* personal_icon@2x.png in Resources */,
 				6D4EC235211C83AD006C3C58 /* Assets.xcassets in Resources */,
+				6F895D16216E20F800CB63F0 /* funcition_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +487,7 @@
 				6DA48CA8211FCC95009AF680 /* CYUISelfDefineVC.m in Sources */,
 				6F6D7F962149270700582441 /* CYColorPicManager.m in Sources */,
 				6DA48CB821206F8D009AF680 /* HomeVC.m in Sources */,
+				6F895D14216E188500CB63F0 /* FunctionVC.m in Sources */,
 				6D4EC23B211C83AD006C3C58 /* main.m in Sources */,
 				6F6D7F992149315600582441 /* CYPanoramaCompoundView.m in Sources */,
 				253B30DF2143B5E200C238D7 /* CYLongPressMoveCollectionView.m in Sources */,

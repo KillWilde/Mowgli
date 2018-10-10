@@ -10,6 +10,7 @@
 #import "HomeVC.h"
 #import "PersonalVC.h"
 #import "DisplayVC/DisplayVC.h"
+#import "FunciontVC/FunctionVC.h"
 
 @interface MainVC ()
 
@@ -33,12 +34,17 @@
     
     DisplayVC *displayVC = [[DisplayVC alloc] init];
     displayVC.tabBarItem.title = @"展示";
+    displayVC.tabBarItem.image =[UIImage imageNamed:@"display_icon"];
+    
+    FunctionVC *functionVC = [[FunctionVC alloc] init];
+    functionVC.tabBarItem.title = @"功能区";
+    functionVC.tabBarItem.image = [UIImage imageNamed:@"funcition_icon"];
     
     PersonalVC *personalVC = [[PersonalVC alloc] init];
     personalVC.tabBarItem.title = @"我的";
     personalVC.tabBarItem.image = [UIImage imageNamed:@"personal_icon"];
     
-    self.viewControllers = @[homeVC,displayVC,personalVC];
+    self.viewControllers = @[homeVC,displayVC,functionVC,personalVC];
 }
 
 -(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
