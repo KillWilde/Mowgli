@@ -28,11 +28,6 @@ static NSString *kHomeListCell = @"kHomeListCell";
     
     [self.view addSubview:self.homeList];
     
-//    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
-//    longPress.minimumPressDuration = 0.3;
-//
-//    [self.homeList addGestureRecognizer:longPress];
-    
     [self myLayout];
 }
 
@@ -44,24 +39,6 @@ static NSString *kHomeListCell = @"kHomeListCell";
         make.top.equalTo(self.view.mas_top);
         make.bottom.equalTo(self.view.mas_bottom);
     }];
-}
-
--(void)longPress:(UILongPressGestureRecognizer *)gesture{
-    CGPoint point = [gesture locationInView:self.homeList];
-    NSIndexPath *indexPath = [self.homeList indexPathForItemAtPoint:point];
-    
-    if (indexPath == nil) {
-        return;
-    }
-    
-    if (gesture.state == UIGestureRecognizerStateBegan) {
-        HomeListCell *cell = (HomeListCell *)[self.homeList cellForItemAtIndexPath:indexPath];
-        [cell reduceContentAnimation:YES];
-    }
-    else if (gesture.state == UIGestureRecognizerStateEnded || gesture.state == UIGestureRecognizerStateCancelled){
-        HomeListCell *cell = (HomeListCell *)[self.homeList cellForItemAtIndexPath:indexPath];
-        [cell relargeContentAnimation:YES];
-    }
 }
 
 #pragma mark - Delegate
@@ -79,6 +56,10 @@ static NSString *kHomeListCell = @"kHomeListCell";
     return cell;
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"clicked indexPathRow %i",(int)indexPath.row);
+}
+
 #pragma mark - LazyLoad
 -(UICollectionView *)homeList{
     if (!_homeList) {
@@ -92,6 +73,15 @@ static NSString *kHomeListCell = @"kHomeListCell";
         _homeList.delegate = self;
         _homeList.dataSource = self;
         _homeList.backgroundColor = [UIColor whiteColor];
+        __weak typeof(self) weakSelf = self;
+        _homeList.beginBlock = ^(NSInteger indexPathRow) {
+            HomeListCell *cell = (HomeListCell *)[weakSelf.homeList cellForItemAtIndexPath:[NSIndexPath indexPathForRow:indexPathRow inSection:0]];
+            [cell reduceContentAnimation:YES];
+        };
+        _homeList.endBlock = ^(NSInteger indexPathRow) {
+            HomeListCell *cell = (HomeListCell *)[weakSelf.homeList cellForItemAtIndexPath:[NSIndexPath indexPathForRow:indexPathRow inSection:0]];
+            [cell relargeContentAnimation:YES];
+        };
     }
     
     return _homeList;

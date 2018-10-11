@@ -24,39 +24,66 @@
     return self;
 }
 -(void)reduceContentAnimation:(BOOL)animation{
-    [UIView animateWithDuration:animation ? 0.5:0 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        [self.myShadowView mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self).mas_offset(30);
-            make.right.equalTo(self).mas_offset(-30);
-            make.top.equalTo(self).mas_offset(30);
-            make.bottom.equalTo(self).mas_offset(-30);
-        }];
-        
-        [self.imageViewContnt mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self).mas_offset(30);
-            make.right.equalTo(self).mas_offset(-30);
-            make.top.equalTo(self).mas_offset(30);
-            make.bottom.equalTo(self).mas_offset(-30);
-        }];
-    } completion:nil];
+//    [UIView animateWithDuration:animation ? 0.5:0 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+//        [self.myShadowView mas_remakeConstraints:^(MASConstraintMaker *make) {
+//            make.left.equalTo(self).mas_offset(30);
+//            make.right.equalTo(self).mas_offset(-30);
+//            make.top.equalTo(self).mas_offset(30);
+//            make.bottom.equalTo(self).mas_offset(-30);
+//        }];
+//
+//        [self.imageViewContnt mas_remakeConstraints:^(MASConstraintMaker *make) {
+//            make.left.equalTo(self).mas_offset(30);
+//            make.right.equalTo(self).mas_offset(-30);
+//            make.top.equalTo(self).mas_offset(30);
+//            make.bottom.equalTo(self).mas_offset(-30);
+//        }];
+//    } completion:nil];
+    [self.myShadowView.layer removeAllAnimations];
+    [self.imageViewContnt.layer removeAllAnimations];
+    
+    CABasicAnimation *scale = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    scale.fromValue = [NSNumber numberWithFloat:1];
+    scale.toValue = [NSNumber numberWithFloat:0.95];
+    scale.duration = 0.3;
+    scale.removedOnCompletion = NO;
+    scale.fillMode = kCAFillModeForwards;
+    scale.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    [self.myShadowView.layer addAnimation:scale forKey:@"CYScale"];
+    [self.imageViewContnt.layer addAnimation:scale forKey:@"CYScale"];
+    
 }
 
 -(void)relargeContentAnimation:(BOOL)animation{
-    [UIView animateWithDuration:animation ? 0.5:0 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        [self.myShadowView mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self).mas_offset(20);
-            make.right.equalTo(self).mas_offset(-20);
-            make.top.equalTo(self).mas_offset(20);
-            make.bottom.equalTo(self).mas_offset(-20);
-        }];
-        
-        [self.imageViewContnt mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self).mas_offset(20);
-            make.right.equalTo(self).mas_offset(-20);
-            make.top.equalTo(self).mas_offset(20);
-            make.bottom.equalTo(self).mas_offset(-20);
-        }];
-    } completion:nil];
+//    [UIView animateWithDuration:animation ? 0.5:0 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+//        [self.myShadowView mas_remakeConstraints:^(MASConstraintMaker *make) {
+//            make.left.equalTo(self).mas_offset(20);
+//            make.right.equalTo(self).mas_offset(-20);
+//            make.top.equalTo(self).mas_offset(20);
+//            make.bottom.equalTo(self).mas_offset(-20);
+//        }];
+//
+//        [self.imageViewContnt mas_remakeConstraints:^(MASConstraintMaker *make) {
+//            make.left.equalTo(self).mas_offset(20);
+//            make.right.equalTo(self).mas_offset(-20);
+//            make.top.equalTo(self).mas_offset(20);
+//            make.bottom.equalTo(self).mas_offset(-20);
+//        }];
+//    } completion:nil];
+    [self.myShadowView.layer removeAllAnimations];
+    [self.imageViewContnt.layer removeAllAnimations];
+    
+    CABasicAnimation *scale = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    scale.fromValue = [NSNumber numberWithFloat:0.95];
+    scale.toValue = [NSNumber numberWithFloat:1];
+    scale.duration = 0.3;
+    scale.removedOnCompletion = NO;
+    scale.fillMode = kCAFillModeForwards;
+    scale.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    [self.myShadowView.layer addAnimation:scale forKey:@"CYScale"];
+    [self.imageViewContnt.layer addAnimation:scale forKey:@"CYScale"];
 }
 
 #pragma mark - Layout
